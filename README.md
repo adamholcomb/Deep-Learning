@@ -36,7 +36,7 @@ I start with two hidden layers and a large number of neurons (80 first layer, 30
 
 Looking at the nunique of the data, I see that the ask amount "ASK_AMT" has a large number of unique values, so I make a box plot of that data:
 
-<img src="C:\Users\adamh\Documents\Homework\Deep-Learning\Resources\image-20210925145919964.png" alt="image-20210925145919964" style="zoom: 80%;" /> <img src="C:\Users\adamh\Documents\Homework\Deep-Learning\Resources\image-20210925150113197.png" alt="image-20210925150113197" style="zoom: 80%;" />
+<img src="https://github.com/adamholcomb/Deep-Learning/blob/main/Resources/image-20210925145919964.png" alt="image-20210925145919964" style="zoom: 80%;" /> <img src="https://github.com/adamholcomb/Deep-Learning/blob/main/Resources/image-20210925150113197.png" alt="image-20210925150113197" style="zoom: 80%;" />
 
 This shows such a wide range of outliers, so I look at the lower and upper bounds of the box plot using the quartiles plus and minus 1.5 * interquartile range. This gives outlier cutoffs of 887 and 11,855. Removing these outliers and running the neural network with the same number of nodes as above results in a higher accuracy: 0.744. This is still under the target, but better than Run 1.
 
@@ -50,5 +50,5 @@ For Run 3 I adjust the model parameters to attempt a higher accuracy. This time 
 
 Run 1 has an overcomplicated neural network and a dataset with many outliers. Removing the outliers for Run 2 increases the accuracy substantially from 0.734 to 0.744. However, changing parameters of the neural network and making it less complicated has little impact on the accuracy, which remains at 0.744. This shows that the model is complicated enough, and either decreasing nodes/layers or changing the number/makeup of features would more greatly increase accuracy. The models are close, however, and individual testing runs are above 0.75. The accuracy plot of Run 3 shows this as well:
 
-![image-20210925151724935](C:\Users\adamh\Documents\Homework\Deep-Learning\Resources\image-20210925151724935.png)
+![image-20210925151724935](https://github.com/adamholcomb/Deep-Learning/blob/main/Resources/image-20210925151724935.png)
 
